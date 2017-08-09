@@ -1,0 +1,45 @@
+extends ../layout
+
+block content
+  .container
+    .header
+      h1 List Tasks
+      h4
+        | Welcome to the TO DO App by 
+        strong
+          
+          a(href='https://github.com/ivanmlaborda')
+            | @ivanmlaborda
+        | . Please enjoy.
+    .add-bar    
+      .row
+        .col-xs-4
+          button.btn.btn-success(type='button') all done
+        .col-xs-8
+          form(action="/tasks", method="POST")
+            .input-group
+              input.form-control(type='text', name='task', placeholder='Add a new task...' autofocus)
+              span.input-group-btn
+                button.btn.btn-default add  
+    .list-container
+      .row          
+        ul#todo.list-group
+          each task in tasks
+            li.list-group-item.task-item(class= task.done && 'task-done')
+              button.done.btn.btn-primary
+                i.fa.fa-check
+              span= task.title
+              input.task-id(type='hidden', value=task.id)
+              input.task-edit.hidded(type='text', name='task', placeholder=task.title, autofocus, value=task.title)
+              button.remove.btn.btn-danger.pull-right
+                i.fa.fa-remove
+              button.edit.btn.btn-warning.pull-right
+                i.fa.fa-pencil
+                
+                    
+                  
+
+                
+              
+              
+                

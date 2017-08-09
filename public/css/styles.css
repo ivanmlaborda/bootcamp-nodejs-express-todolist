@@ -1,0 +1,95 @@
+body {
+  background-color: black !important;
+}
+
+.header, .add-bar, .list-container {
+  margin-top: 50px;
+}
+
+.header h1, .header h4 {
+  color: white;
+}
+
+ul.nav.nav-pills {
+  border-bottom: 5px solid white;
+  color: white;
+  padding: 20px;
+
+}
+.nav-pills>li>a {
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid white;
+  margin-right: 15px;
+}
+
+.list-container button.btn {
+  padding: 3px 6px;
+}
+
+.list-container span {
+  font-size: 14px;
+}
+
+.nav-pills>li>a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  padding-bottom: 50px;
+}
+form {
+    display: inline-block;
+}
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+#todo {
+    margin: 0 auto;
+}
+
+a.close {
+  float: right;
+}
+
+.task-item span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.task-item i {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.task-item:hover {
+  background: #eee;
+}
+.task-item i {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.task-edit {
+  margin-left: 20px;
+  font-size: 16px;
+  background-color: #F0F0D8;
+}
+.hidded{
+  display: none;
+  height: 0px;
+
+}
+
+
+.task-done {
+  background: #CCC;
+  text-decoration: line-through;
+}
+
+button.btn.btn-warning.pull-right {
+  margin-right: 10px;
+}
